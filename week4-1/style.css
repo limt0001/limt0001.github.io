@@ -1,0 +1,51 @@
+.grid {
+    width: 800px;
+    /* CSS box model
+        margin: 10px; -- margin on all sides
+        margin: 10px 5px; -- 10px top and bottom, 5px left and right
+        margin: 10px 5px 7px; -- top, l-r, bottom
+        margin: 10px 5px 7px 8px; -- top, right, bottom, left
+        doesn't apply to borders.
+    */
+    margin: 10px auto 0;
+    border: 2px solid black;
+
+    /* make this a grid container */
+    display: grid;
+
+    /* set a grid with two columns, each 400px wide */
+    /* grid-template-columns: 400px 400px; */
+
+    /* set a grid with two columns, each taking up an equal amount of space */
+    /* grid-template-columns: 1fr 1fr; */
+    /* fr = fraction, or a fraction of the available space */
+
+    /* use "repeat" to add four columns */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* add rows */
+    grid-template-rows: repeat(4, 100px);
+}
+
+.grid-item {
+    background: lightgrey;
+    font-size: 24px;
+    border: 2px dashed black;
+    height: 50px;
+}
+
+/* using the grid column and row numbers, position a box exactly */
+.grid-item:nth-child(1){
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* use justify and align-item  */
+.grid-item:nth-child(4){
+    /* align property aligns things vertially */
+    align-self: end;
+    /* justify property aligns things horizontally */
+    justify-self: end;
+}
