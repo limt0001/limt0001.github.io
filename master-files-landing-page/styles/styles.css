@@ -1,0 +1,365 @@
+/************** CSS RESET *****************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************** START OF CSS STYLING *****************/
+/*****************************************************/
+/******************** MOBILE *************************/
+
+
+/* assert font family from local files */
+@font-face {
+	font-family: "Montserrat-Regular.ttf", "Montserrat-Bold.ttf";
+	src: local('Montserrat-Regular.ttf'), local('Montserrat-Bold.ttf');
+}
+
+/* Style Header */
+/* style body with background color and adjusting fonts */
+body{
+	background-color: #f7f7ff;
+	color: #333131;
+	font-family: "Montserrat-Regular";
+	margin: 0 auto;
+	max-width: 100%;
+}
+/* add padding but not to footer */
+.main {
+	padding: 25px 35px;
+}
+
+/* resize logo */
+.logo {
+	width: 114px;
+	height: auto;
+}
+
+/* Style heading and subheading following padding and sizes from xd file */
+h1 {
+	font-family: "Montserrat-Bold";
+	font-size: 60px;
+	line-height: 73px;
+}
+
+p {
+	font-size: 24px;
+	line-height: 29px;
+}
+.scooter {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+/* Style Form */
+.form-wrap {
+	background: white;
+	padding: 20px 27px;
+	border-radius: 25px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin: 0 auto;
+	max-width: 100%;
+}
+h2 {
+	font-family: "Montserrat-Bold";
+	font-size: 40px;
+	line-height: 49px;
+}
+h3 {
+	font-size: 16px;
+	line-height: 19px;
+}
+
+/* style input areas */
+input {
+	display: block;
+	background: #F4F4F5;
+	color: #333131;
+	border: none;
+	border-radius: 11px;
+	width: 95%;
+	font-size: 16px;
+	padding: 11px;
+	margin-top: 15px;
+}
+input::placeholder {
+	font-family: "Montserrat-Regular";
+	color: #9b9b9b;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+/* style checkbox 
+start by hidding default checkbox */
+.agree {
+	display: block;
+	position: relative;
+	padding-left: 38px;
+	padding-top: 20px;
+}
+input[type="checkbox"] {
+	visibility: hidden;
+	margin: 0 auto;
+}
+/* create new checkbox */
+.checkbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	border: 1px solid #333131;
+	border-radius: 5px;
+	margin: 15px 0px; 
+}
+label {
+	color:#333131;
+	font-size: 16px;
+}
+/* hover state on checkbox */
+.checkbox:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* display checkmark when checked */
+.agree input:checked ~ .checkbox:after {
+	display: block;
+}
+.agree .checkbox:after {
+	left: 8px; 
+	bottom: 5px; 
+	width: 6px; 
+	height: 12px; 
+	border: solid #333131; 
+	border-width: 0 4px 4px 0; 
+	-webkit-transform: rotate(45deg); 
+	-ms-transform: rotate(45deg); 
+	transform: rotate(45deg);
+}
+
+/* Style Submit Button */
+#button {
+	color: #333131;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: "Montserrat-Bold";
+	background-color: #57eeab;
+	width: 100%;
+	padding: 20px;
+}
+h4 {
+	font-size: 14px;
+	line-height: 18px;
+	padding: 15px 0px
+}
+a {
+	text-decoration: none;
+	color: #ff8480;
+}
+
+/*********** Style Footer ***************/
+footer {
+	background-color: #fffd8c;
+	padding: 30px 30px; 
+}
+h5 {
+	font-family: "Montserrat-Bold";
+	font-size: 18px;
+	line-height: 22px;
+}
+h6 {
+	font-size: 16px;
+	line-height: 19px;
+	margin-top: 10px;
+}
+
+/* styling calculate form */
+.hours-city {
+	display: grid;
+	grid-template-columns: 60px 1fr;
+	grid-column-gap: 10%;
+}
+
+/* style calculate button */
+#cal {
+	color: white;
+	font-size: 24px;
+	font-family: "Montserrat-Bold";
+	text-transform: uppercase;
+	background: #ff8480;
+	width: 100%;
+}
+
+
+/* styling social media links -- resize  */
+.social {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px;
+}
+
+/* making facebook icon round in mobile view */
+.facebook {
+	border-radius: 50%;
+}
+
+
+
+/*****************************************************/
+/* making twitter icon just the bird in mobile view */
+/*****************************************************/
+
+/****************** TABLET VIEW **********************/
+@media only screen and (min-width: 768px) {
+	/* h1 increases in size */
+	.main {
+		padding: 25px 83px;
+	}
+	h1 {
+		font-size: 80px;
+		line-height: 97px;
+		width: 600px;
+	}
+	p {
+		width: 600px
+	}
+	.scooter {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 30px;
+		max-width: 600px;
+	}
+	/* Increase sizes in style of form */
+	.form-wrap {
+		padding: 40px;
+		height: auto;
+		width: 600px;
+	}
+	/* h3 increases in size */
+	h3 {
+		font-size: 30px;
+		line-height: 37px;
+		margin-top: 15px;
+	}
+	/* input boxes increase in size */
+	input {
+		font-size: 18px;
+		padding: 20px;
+		margin-top: 15px;
+	}
+	input::placeholder {
+		font-size: 18px;
+	}
+	label {
+		font-size: 20px;
+	}
+	/* drive with us button increases */
+	#button {
+		font-size: 32px;
+		width: 100%;
+	}
+	/* h4 moves to center */
+	h4 {
+		text-align: center;
+	}
+	/* calculate button moves onto same line as inputs */
+	#cal {
+		font-size: 18px;
+		max-width: 600px;
+	}
+	#htmlForm2 {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-column-gap: 10%;
+	}
+	.hours-city {
+		grid-template-columns: 1fr 4fr;
+		grid-column-gap: 20%;
+	}
+
+	/* keep social media links centered and not spread out */
+	.social {
+		max-width: 600px;
+		margin: 20px auto;
+	}
+}
+
+
+/****************** DESKTOP VIEW **********************/
+/* moving the content into a landscape view */
+@media only screen and (min-width: 1220px) {
+	/* make scooter image fixed in the center of the page */
+	.main {
+		display: flex;
+		padding: 100px;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	/* account for fixed pixels sizes*/
+	.head {
+		display: flex;
+	}
+	.header {
+		position: relative;
+	}
+	.scooter {
+		position: absolute;
+		width: 600px;
+		left: 500px;
+	}
+	.form-wrap {
+		position: relative;
+		float: left;
+	}
+	/* footerrrrrrr */
+	.footer {
+		display: flex;	
+	}
+}
+/*********** NOTE: SO I THOUGHT WE WERE SUPPOSE TO FOLLOW THE SIZES ON THE XD FILE SO ALL MY FONTS AND DIVS ARE FIXED PIXELS WHEN I SHOULD HAVE MADE THEM IN A MORE RESPONSIVE FORMAT SO YEAH. ****************************************/
