@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Bootstrap This!</title>
+  </head>
+  <body>
+<!-- MUST USE BOOTSTRAP GRIDS, COMPONENTS like buttons, cards, jumbotron, etc. -->
+
+<!-- BANNER -->
+    <div class="container-fluid">
+        <div class="row">
+            <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-social.png" class="img-fluid w-100" alt="Responsive image">
+        </div>
+    </div>  
+<!-- NAVIGATION -->
+    <ul class="nav navbar-expand-lg fix-top">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="#components" class="nav-link">Components</a>
+        </li>
+        <li class="nav-item">
+            <a href="#install" class="nav-link">Install Bootstrap</a>
+        </li>
+    </ul>
+    
+<!-- ABOUT -->
+    <div class="container-fluid" id="about">
+            <div class="col-sm bg-light">
+                <h1 class="display-3 text-secondary">About Bootstrap</h1>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="h4 text-primary">Open Source</div>
+                        <div class="h6 text-muted">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="h4 text-primary">Mobile First</div>
+                        <div class="h6 text-muted">Bootstrap includes a powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="h4 text-primary">Components Library</div>
+                        <div class="h6 text-muted">Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<!-- COMPONENTS -->
+<div class="container-fluid" id="components">
+    <div class="row"></div>
+        <div class="col-sm">
+            <h1 class="display-3 text-secondary">Components</h1>
+            <!-- Alerts -->
+            <div class="container px-lg-5">
+                <div class="row mx-lg-n5">
+                  <div class="col py-3 px-lg-5 border bg-light">
+                    <div class="h4 text-primary">Alerts</div>
+                    Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. For styling, there are eight contextual classes:</div>
+                  <div class="col py-3 px-lg-5 border bg-light">
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                      </div>
+                      <div class="alert alert-secondary" role="alert">
+                        A simple secondary alert—check it out!
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                      </div>
+                      <div class="alert alert-danger" role="alert">
+                        A simple danger alert—check it out!
+                      </div>
+                      <div class="alert alert-warning" role="alert">
+                        A simple warning alert—check it out!
+                      </div>
+                      <div class="alert alert-info" role="alert">
+                        A simple info alert—check it out!
+                      </div>
+                      <div class="alert alert-light" role="alert">
+                        A simple light alert—check it out!
+                      </div>
+                      <div class="alert alert-dark" role="alert">
+                        A simple dark alert—check it out!
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Breadcrumbs -->
+              <div class="container px-lg-5">
+                <div class="row mx-lg-n5">
+                  <div class="col py-3 px-lg-5 border bg-light">
+                    <div class="h4 text-primary">Breadcrumbs</div>
+                    Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.
+                  </div>
+                  <div class="col py-3 px-lg-5 border bg-light"><nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                  </nav>
+                  
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                  
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                  </nav></div>
+                </div>
+              </div>
+            <!-- List Group -->
+            <div class="container px-lg-5">
+                <div class="row mx-lg-n5">
+                  <div class="col py-3 px-lg-5 border bg-light">
+                      <div class="h4 text-primary">List group</div>
+                      List groups are a flexible and powerful component for displaying a series of content.
+                    </div>
+                  <div class="col py-3 px-lg-5 border bg-light">
+                      <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Buttons -->
+            <div class="container px-lg-5">
+                <div class="row mx-lg-n5">
+                  <div class="col py-3 px-lg-5 border bg-light">
+                    <div class="h4 text-primary">Buttons</div>
+                    Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+                  </div>
+                  <div class="col py-3 px-lg-5 border bg-light">
+                    <button type="button" class="btn btn-primary btn-block">Primary</button>
+                    <button type="button" class="btn btn-secondary btn-block">Secondary</button>
+                    <button type="button" class="btn btn-success btn-block">Success</button>
+                    <button type="button" class="btn btn-danger btn-block">Danger</button>
+                    <button type="button" class="btn btn-warning btn-block">Warning</button>
+                    <button type="button" class="btn btn-info btn-block">Info</button>
+                    <button type="button" class="btn btn-light btn-block">Light</button>
+                    <button type="button" class="btn btn-dark btn-block">Dark</button>
+                    <button type="button" class="btn btn-link btn-block">Link</button>
+                  </div>
+                </div>
+              </div>
+            <!-- Cards -->
+            <div class="container px-lg-5">
+                <div class="row mx-lg-n5">
+                  <div class="col py-3 px-lg-5 border bg-light">
+                      <div class="h4 text-primary">Cards</div>
+                      Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.
+                    </div>
+                  <div class="col py-3 px-lg-5 border bg-light">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Jumbotron -->
+            <div class="container px-lg-5">
+                <div class="row mx-lg-n5">
+                  <div class="col py-3 px-lg-5 border bg-light">
+                    <div class="h4 text-primary">Jumbotron</div>
+                    Lightweight, flexible component for showcasing hero unit style content.
+                  </div>
+                  <div class="col py-3 px-lg-5 border bg-light">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                          <h1 class="display-4">Fluid jumbotron</h1>
+                          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- GET BOOTSTRAP -->
+    <!-- added a button that links to download bootstrap in a jumbotron -->
+    <div class="jumbotron jumbotron-fluid" id="install">
+        <div class="container">
+          <h1 class="display-4">Install Bootstrap</h1>
+          <hr class="my-4">
+          <p>The two most common ways to install and use Bootstrap is to download the compiled version of the Bootstrap CSS and JavaScript files or to use a Content Delivery Network (CDN). While the download version does make it easier to work on a project offline, using a CDN will likely improve your site load times. Use the links below for more instructions installing Bootstrap.</p>
+          <a class="btn btn-primary" href="https://getbootstrap.com/docs/4.4/getting-started/download/" role="button">Download link</a>
+          <a class="btn btn-primary" href="https://getbootstrap.com/docs/4.4/getting-started/introduction/#quick-start" role="button">CDN link</a>
+        </div>
+      </div>
+<!-- FOOTER -->
+<div class="container-fluid">
+    <h6 class="text-muted text-right">Created by Jennifer Lim-Tamkican</h6>
+</div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
