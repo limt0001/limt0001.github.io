@@ -61,25 +61,26 @@ pentagon;
   @extend .shapes;
   @if $shape == square {
     @extend %square;
-    background-color: $color;
   }
   @if $shape == circle {
    @extend %circle;
-   background-color: $color;
  }
  @if $shape == pentagon {
-   @extend %pentagon;
-   border-color: $color transparent;
-   &::before {
-     border-color: transparent transparent $color;
-   }
- }
-
+  @extend %pentagon;
+  &::before {
+    border-color: $color transparent;
+  }
+//  @if $shape == pentagon {
+//    @extend %pentagon;
+//    border-color: $color transparent;
+//    &::before {
+//      border-color: transparent transparent $color;
+//    }
 }
+background-color: $color;
 @each $shape in $shapes {
  @each $color in $colors {
    .#{$shape}-#{$color} {
      @include shape($shape, $color);
    }
  }
-}
