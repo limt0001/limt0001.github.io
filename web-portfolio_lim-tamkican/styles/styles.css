@@ -171,10 +171,7 @@ footer {
  /* position banner image and lay arrow over top of image */
 .banner {
     height: 5%;
-    width: 150%;
-}
- .banner img{
-    margin-left: -60px;
+    width: 100%;
 }
 .about-content {
     overflow: auto;
