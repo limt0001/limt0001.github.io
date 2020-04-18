@@ -1,0 +1,494 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/********** END OF CSS RESET  ***************/
+/*********************************************
+    START OF CSS STYLES 
+ *********************************************/
+body {
+    height: 100%;
+    font-family: 'Ralewway', sans-serif;
+    color: white;
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*********************************************
+    LANDING PAGE
+ *********************************************/
+/* make image background for whole screen & blur background */
+.bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    background-image: url('../images//jenn_video.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(4px);
+}
+.main-content {
+    overflow: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    margin: 0 auto;
+}
+
+/* positioning logo center and resized */
+header {
+    display: block;
+    text-align: center;
+    padding: 60px;
+}
+.logo-white,
+.logo-black {
+    width: 90%;
+}
+
+/* style main content */
+h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+p {
+    font-size: .75rem;
+    font-family: "PT Mono", 'Courier New', Courier, monospace;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 2rem;
+}
+.tagline {
+    padding: 60px;
+}
+nav {
+    padding: 0 60px;
+    margin-bottom: 5%;
+}
+nav a,
+nav a:link {
+    color: white;
+    text-decoration: none;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+nav img {
+    width: 20px;
+    transform: rotate(90deg);
+}
+
+/* hide banner and copyrights/sidebar in mobile */
+.sidebar,
+.banner-image,
+.logo-black,
+.black {
+    display: none;
+}
+
+/* footer with social media icons */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    margin: 0 auto;
+}
+.social-media-white img {
+    max-width: 30px;
+}
+.social-media-black {
+    display: none;
+}
+.social-media-white {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+/*********************************************
+    ABOUT PAGE 
+ *********************************************/
+ /* position banner image and lay arrow over top of image */
+.banner {
+    height: 5%;
+    width: 150%;
+}
+ .banner img{
+    margin-left: -60px;
+}
+.about-content {
+    overflow: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    margin: 0 auto;
+}
+/* hide logo in mobile and tablet */
+.about .logo-white {
+    display: none;
+}
+/* turn arrow around and resize */
+.back-button {
+    text-decoration: none;
+}
+.back-button img {
+    transform: rotate(270deg);
+    width: 30px;
+}
+.banner .back-button {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    right: 55%;
+    top: 2%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%;
+}
+
+/* style content */
+.about {
+    margin: 0 auto;
+    padding: 30px;
+}
+/* change text color */
+.about h1,
+p,
+.gallery h1 {
+    color: #292929;
+}
+.about h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 5%;
+}
+/* style button */
+button {
+    display: grid;
+    border: #292929 solid 2px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    margin: 0 auto;
+    width: 30%;
+    align-content: center;
+    margin-top: 30px;
+}
+button a,
+button a:link {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+ /*********************************************
+    PROJECTS PAGE 
+ *********************************************/
+/* resize logo and position header */
+.project-head .logo {
+    width: 60%;
+}
+.gallery h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: .5em auto;
+}
+ /* crop images to all be same size */
+ .project-image {
+     height: 300px;
+     overflow: hidden;
+     margin: 0;
+ }
+ .project-image img {
+    object-fit: cover;
+    height: 100%;
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+ }
+ /* create css grid image gallery with blur effect and interaction media queries */
+.project {
+    padding: 50px 30px;
+    margin: 0 auto;
+}
+.grid-container {
+    display: grid;
+    grid-gap: 2em;
+}
+/* hover style */
+.project-listing {
+    position: relative;
+}
+.project-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgb(0,0,0,0.4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+.project-title h4, 
+.project-title p {
+    color: white;
+    padding: 0 30px;
+}
+.project-listing:hover .project-title {
+    opacity: 1;
+}
+.project-listing:hover .project-image img {
+    filter: blur(2px);
+}
+/*********************************************
+    TABLET VIEW 
+*********************************************/
+@media screen and (min-width: 500px) {
+/* flex wrap content on projects page */
+    .project-main {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/*********************************************
+   DESKTOP VIEW 
+*********************************************/
+@media screen and (min-width: 900px) {
+/* adjust LANDING PAGE ***********************
+1. adjust background image
+2. position sidebars
+3. move social media icons to top right corner */
+    .bg {
+        display: none;
+    }
+    .banner-landing {
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .banner-image {
+        display: block;
+        width: 650px;
+        height: 800px; 
+        object-fit: cover;
+    }
+    .banner-landing .main-content {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 80%;
+        right: 0;
+        top: 0;
+        text-align: left;
+        width: 100%;
+    }
+    .sidebar {
+        display: block;
+        text-align: center;
+    }
+    h2 {
+        color: #292929;
+        font-size: .5rem;
+    }
+    /* text and logos to black */
+    .tagline,
+    nav a,
+    nav a:link  {
+        color: #292929;
+    }
+    .logo-white,
+    .white,
+    .social-media-white {
+        display: none;
+    }
+    .logo-black,
+    .social-media-black {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 20px;
+    }
+    .social-media-black {
+        width: 80px;
+        padding: 0 50px 50px;
+    }
+    .social-container {
+        display: grid;
+        justify-content: end;
+    }
+    .black {
+        display: inline-block;
+    }
+    .tagline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+/* adjust ABOUT PAGE ****************************
+1. make background image full page
+2. logo in top left corner */
+    .banner {
+        display: none;
+    }
+    .bg-about {
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        display: block;
+        background-image: url('../images//jenn_stairs.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .about {
+        overflow: auto;
+        position: relative;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        z-index: 9999;
+        margin: 0 auto;
+        text-align: center;
+        align-content: center;
+        background: rgb(0,0,0,0.4);
+    }
+    /* bring back logo */
+    .about .logo-white {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+    /* change text back to white */
+    .about h1,
+    .about p,
+    .about button a,
+    .about button a:link,
+    .about h2 {
+        color: white;
+    }
+    .sidebar a,
+    .sidebar a:link {
+        text-decoration: none;
+        padding: 20px;
+    }
+    .sidebar a:hover {
+        text-decoration: line-through white;
+    }
+    .about h2,
+    .project h2 {
+        margin: 10px;
+    }
+    .about button {
+        background-color:transparent;
+        border: white solid 2px;
+    }
+
+/* adjust PROJECT PAGE ***************************
+1. adjust grid-container */
+    .project-main {
+        display: block;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-content: center;
+        margin: 50px;
+    }
+    .gallery {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .project-head .back-button {
+        display: none;
+    }
+    .project-head .logo {
+        width: 20%;
+    }
+    .project .social-media-white {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 20px;
+        width: 80px;
+    }
+    .project .sidebar a:hover {
+        text-decoration: line-through #292929;
+    }
+    .project footer,
+    .about footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
