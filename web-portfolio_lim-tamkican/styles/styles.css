@@ -92,6 +92,8 @@ img {
     width: 100%;
     z-index: 9999;
     margin: 0 auto;
+    background: rgb(0,0,0,0.4);
+
 }
 
 /* positioning logo center and resized */
@@ -200,7 +202,7 @@ footer {
     z-index: 999;
     margin: 0 auto;
     right: 55%;
-    top: 2%; /* Adjust this value to move the positioned div up and down */
+    top: 2%; 
     text-align: center;
     width: 60%;
 }
