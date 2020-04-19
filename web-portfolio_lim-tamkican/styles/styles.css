@@ -360,6 +360,7 @@ button a:link {
         top: 0;
         text-align: left;
         width: 100%;
+	background: none;
     }
     .sidebar {
         display: block;
