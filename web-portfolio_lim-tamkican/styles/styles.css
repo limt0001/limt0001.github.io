@@ -92,8 +92,6 @@ img {
     width: 100%;
     z-index: 9999;
     margin: 0 auto;
-    background: rgb(0,0,0,0.4);
-
 }
 
 /* positioning logo center and resized */
@@ -360,7 +358,6 @@ button a:link {
         top: 0;
         text-align: left;
         width: 100%;
-        background: none;
     }
     .sidebar {
         display: block;
